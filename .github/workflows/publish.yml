@@ -14,6 +14,7 @@ jobs:
           registry-url: https://npm.pkg.github.com
           scope: '@pasharudenko'
       - run: npm install
+      - run: npm run build
       - run: npm publish
         working-directory: ./build
         env: 
